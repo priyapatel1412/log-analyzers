@@ -1,0 +1,39 @@
+{
+  "name": "log-analizer",
+  "version": "1.0.0",
+  "description": "My coding-exercise project",
+  "scripts": {
+    "start": "node js/main.js",
+    "test": "jest js/tests/main.test.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^27.5.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "google",
+      "standard"
+    ],
+    "plugins": [
+      "import",
+      "n",
+      "promise"
+    ],
+    "rules": {
+      "no-console": "off"
+    }
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
